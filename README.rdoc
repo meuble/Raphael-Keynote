@@ -1,0 +1,14 @@
+= Raphael-Keynote
+
+== A small keynote made with the Raphaël Javascript Library
+
+The goal of the code is to build something graphical without any image to illustrate a presentation on the Raphaël Javascript library.    
+What can illustrate better a presentation than the presentation itself ?
+
+== JS Meetup Paris
+
+This was made for the first JS Meetup in Paris, OOctobre 13th 2010
+
+== License
+
+Raphael-Keynote is licensed under the terms of the WTFPL, see the included WTFPL-LICENSE file.
