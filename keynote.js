@@ -354,7 +354,7 @@ jQuery(function () {
 			});
 		},
 		function() {
-			this.paper.text(300, 40, 'The code').attr({
+			this.paper.text(300, 40, 'The code (primitives)').attr({
 				'font-size': 55,
 				'font-family': 'Futura',
 				'fill': '#333'
@@ -369,7 +369,7 @@ jQuery(function () {
 			});
 		},
 		function() {
-			this.paper.text(300, 40, 'The code').attr({
+			this.paper.text(300, 40, 'The code (primitives)').attr({
 				'font-size': 55,
 				'font-family': 'Futura',
 				'fill': '#333'
@@ -391,7 +391,7 @@ jQuery(function () {
 			});
 		},
 		function() {
-			this.paper.text(300, 40, 'The code').attr({
+			this.paper.text(300, 40, 'The code (primitives)').attr({
 				'font-size': 55,
 				'font-family': 'Futura',
 				'fill': '#333'
@@ -420,7 +420,7 @@ jQuery(function () {
 			});
 		},
 		function() {
-			this.paper.text(300, 40, 'The code').attr({
+			this.paper.text(300, 40, 'The code (primitives)').attr({
 				'font-size': 55,
 				'font-family': 'Futura',
 				'fill': '#333'
@@ -456,7 +456,7 @@ jQuery(function () {
 			});
 		},
 		function() {
-			this.paper.text(300, 40, 'The code').attr({
+			this.paper.text(300, 40, 'The code (primitives)').attr({
 				'font-size': 55,
 				'font-family': 'Futura',
 				'fill': '#333'
@@ -504,7 +504,7 @@ jQuery(function () {
 			});
 		},
 		function() {
-			this.paper.text(300, 40, 'The code').attr({
+			this.paper.text(300, 40, 'The code (path, set)').attr({
 				'font-size': 55,
 				'font-family': 'Futura',
 				'fill': '#333'
@@ -520,7 +520,7 @@ jQuery(function () {
 			});
 		},
 		function() {
-			this.paper.text(300, 40, 'The code').attr({
+			this.paper.text(300, 40, 'The code (path, set)').attr({
 				'font-size': 55,
 				'font-family': 'Futura',
 				'fill': '#333'
@@ -542,6 +542,169 @@ jQuery(function () {
 			set.attr({translation: "400 130", 'stroke-width': 3, 'stroke': '#333', 'font-size': 55, 'font-family': 'Andale Mono', 'text-anchor': "start"})
 			
 			this.paper.text(20, 425, 'var set = paper.set();\nset.push(\n\tpaper.circle(0, 0, 30),\n\tpaper.text(0,0, \'1\')\n);').attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+		},
+		function() {
+			this.paper.text(300, 40, 'The code (attr)').attr({
+				'font-size': 55,
+				'font-family': 'Futura',
+				'fill': '#333'
+			});
+			this.paper.rect(-30, 220, 610, 330, 30).attr({"fill": '#333'});
+			
+			var set = this.paper.set();
+			set.push(
+				this.paper.circle(0, 0, 30),
+				this.paper.text(0, 0, '1')
+			);
+			set.attr({translation: "100 130", 'stroke-width': 3, 'stroke': '#333', 'font-size': 55, 'font-family': 'Courier'})
+			
+			this.paper.text(20, 275, "set.attr({'font-family': 'Courier'});").attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+		},
+		function() {
+			this.paper.text(300, 40, 'The code (attr)').attr({
+				'font-size': 55,
+				'font-family': 'Futura',
+				'fill': '#333'
+			});
+			this.paper.rect(-30, 220, 610, 330, 30).attr({"fill": '#333'});
+			
+			var set = this.paper.set();
+			set.push(
+				this.paper.circle(0, 0, 30),
+				this.paper.text(0, 0, '1')
+			);
+			set.attr({translation: "100 130", 'stroke-width': 3, 'stroke': '#333', 'font-size': 55, 'font-family': 'Courier'})
+			
+			this.paper.text(20, 275, "set.attr({'font-family': 'Courier'});").attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+
+			var set2 = this.paper.set();
+			set2.push(
+				this.paper.circle(0, 0, 30),
+				this.paper.text(0, 0, '1')
+			);
+			set2.attr({translation: "200 130", 'stroke-width': 3, 'stroke': '#4CBA50', 'fill': '#FFF', 'font-size': 55, 'font-family': 'Courier'})
+			this.paper.text(20, 340, "set.attr({'stroke': '#4CBA50',\n\t 'fill': '#FFF'});").attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+		},
+		function() {
+			this.paper.text(300, 40, 'The code (attr)').attr({
+				'font-size': 55,
+				'font-family': 'Futura',
+				'fill': '#333'
+			});
+			this.paper.rect(-30, 220, 610, 330, 30).attr({"fill": '#333'});
+			
+			var set = this.paper.set();
+			set.push(
+				this.paper.circle(0, 0, 30),
+				this.paper.text(0, 0, '1')
+			);
+			set.attr({translation: "100 130", 'stroke-width': 3, 'stroke': '#333', 'font-size': 55, 'font-family': 'Courier'})
+			
+			this.paper.text(20, 275, "set.attr({'font-family': 'Courier'});").attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+
+			var set2 = this.paper.set();
+			set2.push(
+				this.paper.circle(0, 0, 30),
+				this.paper.text(0, 0, '1')
+			);
+			set2.attr({translation: "200 130", 'stroke-width': 3, 'stroke': '#4CBA50', 'fill': '#FFF', 'font-size': 55, 'font-family': 'Courier'})
+			this.paper.text(20, 340, "set.attr({'stroke': '#4CBA50',\n\t 'fill': '#FFF'});").attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+			var set3 = this.paper.set();
+			set3.push(
+				this.paper.circle(0, 0, 30),
+				this.paper.text(0, 0, '1')
+			);
+			set3.attr({translation: "310 130", 'stroke-width': 3, 'stroke': '#4CBA50', 'fill': '#FFF', 'font-size': 55, 'font-family': 'Courier', scale: 2})
+			this.paper.text(20, 400, "set.attr({'scale': 2});").attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+		},
+		function() {
+			this.paper.text(300, 40, 'The code (attr)').attr({
+				'font-size': 55,
+				'font-family': 'Futura',
+				'fill': '#333'
+			});
+			this.paper.rect(-30, 220, 610, 330, 30).attr({"fill": '#333'});
+			
+			var set = this.paper.set();
+			set.push(
+				this.paper.circle(0, 0, 30),
+				this.paper.text(0, 0, '1')
+			);
+			set.attr({translation: "100 130", 'stroke-width': 3, 'stroke': '#333', 'font-size': 55, 'font-family': 'Courier'})
+			
+			this.paper.text(20, 275, "set.attr({'font-family': 'Courier'});").attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+
+			var set2 = this.paper.set();
+			set2.push(
+				this.paper.circle(0, 0, 30),
+				this.paper.text(0, 0, '1')
+			);
+			set2.attr({translation: "200 130", 'stroke-width': 3, 'stroke': '#4CBA50', 'fill': '#FFF', 'font-size': 55, 'font-family': 'Courier'})
+			this.paper.text(20, 340, "set.attr({'stroke': '#4CBA50',\n\t 'fill': '#FFF'});").attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+			var set3 = this.paper.set();
+			set3.push(
+				this.paper.circle(0, 0, 30),
+				this.paper.text(0, 0, '1')
+			);
+			set3.attr({translation: "310 130", 'stroke-width': 3, 'stroke': '#4CBA50', 'fill': '#FFF', 'font-size': 55, 'font-family': 'Courier', scale: 2})
+			this.paper.text(20, 400, "set.attr({'scale': 2});").attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+			var set4 = this.paper.set();
+			set4.push(
+				this.paper.circle(0, 0, 30),
+				this.paper.text(0, 0, '1')
+			);
+			set4.attr({translation: "450 130", 'stroke-width': 3, 'stroke': '#4CBA50', 'fill': '#FFF', 'font-size': 55, 'font-family': 'Courier', scale: 2, cursor: 'wait'})
+			this.paper.text(20, 450, "set.attr({'cursor': 'wait});").attr({
 				'font-size': 22,
 				'font-family': 'Andale Mono',
 				'text-anchor': "start",
