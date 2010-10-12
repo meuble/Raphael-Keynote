@@ -6,12 +6,10 @@ function Keynote(slides) {
 		self.currentSlideId = -1;
 		self.registerEvents();
 		self.next();
-		self.paper.rect(0, 0, 600, 600).attr({"fill": 'none', stroke: '#333', 'stroke-width': 3})
   };
 
 	self.registerEvents = function() {
 		$(document).keydown(function(eventObject) {
-			console.Lo
 			if (eventObject.keyCode == 39) {
 				self.next();
 			}
