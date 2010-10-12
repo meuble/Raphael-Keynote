@@ -344,13 +344,163 @@ jQuery(function () {
 				'text-anchor': "start",
 				'fill': '#333'
 			});
-
+	
 			this.paper.path(paths['tool']).attr({"fill": '#333', 'scale': 2, 'translation': "150 530"});
 			this.paper.text(240, 550, 'Rounded Corners').attr({
 				'font-size': 35,
 				'font-family': 'Futura',
 				'text-anchor': "start",
 				'fill': '#333'
+			});
+		},
+		function() {
+			this.paper.text(300, 40, 'The code').attr({
+				'font-size': 55,
+				'font-family': 'Futura',
+				'fill': '#333'
+			});
+			this.paper.rect(-30, 220, 610, 330, 30).attr({"fill": '#333'});
+		
+			this.paper.text(20, 275, 'var paper = Raphael("Id", width, height);').attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+		},
+		function() {
+			this.paper.text(300, 40, 'The code').attr({
+				'font-size': 55,
+				'font-family': 'Futura',
+				'fill': '#333'
+			});
+			this.paper.rect(-30, 220, 610, 330, 30).attr({"fill": '#333'});
+			
+			this.paper.text(20, 275, 'var paper = Raphael("Id", width, height);').attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+			this.paper.circle(100, 150, 30).attr({'stroke-width': 3, 'stroke': '#333'});
+			this.paper.text(20, 325, 'var circle = paper.circle(cx, cy, r);').attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+		},
+		function() {
+			this.paper.text(300, 40, 'The code').attr({
+				'font-size': 55,
+				'font-family': 'Futura',
+				'fill': '#333'
+			});
+			this.paper.rect(-30, 220, 610, 330, 30).attr({"fill": '#333'});
+			
+			this.paper.text(20, 275, 'var paper = Raphael("Id", width, height);').attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+			this.paper.circle(100, 150, 30).attr({'stroke-width': 3, 'stroke': '#333'});
+			this.paper.text(20, 325, 'var circle = paper.circle(cx, cy, r);').attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+			this.paper.rect(200, 120, 60, 60).attr({'stroke-width': 3, 'stroke': '#333'});
+			this.paper.text(20, 375, 'var rect = paper.rect(x, y, w, h, r);').attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+		},
+		function() {
+			this.paper.text(300, 40, 'The code').attr({
+				'font-size': 55,
+				'font-family': 'Futura',
+				'fill': '#333'
+			});
+			this.paper.rect(-30, 220, 610, 330, 30).attr({"fill": '#333'});
+			
+			this.paper.text(20, 275, 'var paper = Raphael("Id", width, height);').attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+			this.paper.circle(100, 150, 30).attr({'stroke-width': 3, 'stroke': '#333'});
+			this.paper.text(20, 325, 'var circle = paper.circle(cx, cy, r);').attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+			this.paper.rect(200, 120, 60, 60).attr({'stroke-width': 3, 'stroke': '#333'});
+			this.paper.text(20, 375, 'var rect = paper.rect(x, y, w, h, r);').attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+			this.paper.ellipse(350, 150, 20, 35).attr({'stroke-width': 3, 'stroke': '#333', 'rotation': 30});
+			this.paper.text(20, 425, 'var elipse = paper.ellipse(cx, cy, rx, ry);').attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+		},
+		function() {
+			this.paper.text(300, 40, 'The code').attr({
+				'font-size': 55,
+				'font-family': 'Futura',
+				'fill': '#333'
+			});
+			this.paper.rect(-30, 220, 610, 330, 30).attr({"fill": '#333'});
+			
+			this.paper.text(20, 275, 'var paper = Raphael("Id", width, height);').attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+			this.paper.circle(100, 150, 30).attr({'stroke-width': 3, 'stroke': '#333'});
+			this.paper.text(20, 325, 'var circle = paper.circle(cx, cy, r);').attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+			this.paper.rect(200, 120, 60, 60).attr({'stroke-width': 3, 'stroke': '#333'});
+			this.paper.text(20, 375, 'var rect = paper.rect(x, y, w, h, r);').attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+			this.paper.ellipse(350, 150, 20, 35).attr({'stroke-width': 3, 'stroke': '#333', 'rotation': 30});
+			this.paper.text(20, 425, 'var elipse = paper.ellipse(cx, cy, rx, ry);').attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+			this.paper.text(430, 145, 'Text').attr({
+				'font-size': 42,
+				'font-family': 'Futura',
+				'text-anchor': "start",
+				'fill': '#333'
+			});
+			this.paper.text(20, 475, 'var text = paper.text(x, y, t);').attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
 			});
 		}
 	]);
