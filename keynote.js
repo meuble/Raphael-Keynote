@@ -344,7 +344,7 @@ jQuery(function () {
 				'text-anchor': "start",
 				'fill': '#333'
 			});
-	
+			
 			this.paper.path(paths['tool']).attr({"fill": '#333', 'scale': 2, 'translation': "150 530"});
 			this.paper.text(240, 550, 'Rounded Corners').attr({
 				'font-size': 35,
@@ -497,6 +497,51 @@ jQuery(function () {
 				'fill': '#333'
 			});
 			this.paper.text(20, 475, 'var text = paper.text(x, y, t);').attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+		},
+		function() {
+			this.paper.text(300, 40, 'The code').attr({
+				'font-size': 55,
+				'font-family': 'Futura',
+				'fill': '#333'
+			});
+			this.paper.rect(-30, 220, 610, 330, 30).attr({"fill": '#333'});
+			
+			this.paper.path("M100 150,100 100,150 150,150 100,200 150,200 100").attr({"stroke": '#333', "stroke-width": 3});
+			this.paper.text(20, 275, 'var path = paper.path(svgPath);').attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+		},
+		function() {
+			this.paper.text(300, 40, 'The code').attr({
+				'font-size': 55,
+				'font-family': 'Futura',
+				'fill': '#333'
+			});
+			this.paper.rect(-30, 220, 610, 330, 30).attr({"fill": '#333'});
+			
+			this.paper.path("M100 150,100 100,150 150,150 100,200 150,200 100").attr({"stroke": '#333', "stroke-width": 3});
+			this.paper.text(20, 275, 'var path = paper.path(svgPath);').attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+			var set = this.paper.set();
+			set.push(
+				this.paper.circle(0, 0, 30),
+				this.paper.text(-17, 0, '1')
+			);
+			set.attr({translation: "400 130", 'stroke-width': 3, 'stroke': '#333', 'font-size': 55, 'font-family': 'Andale Mono', 'text-anchor': "start"})
+			
+			this.paper.text(20, 425, 'var set = paper.set();\nset.push(\n\tpaper.circle(0, 0, 30),\n\tpaper.text(0,0, \'1\')\n);').attr({
 				'font-size': 22,
 				'font-family': 'Andale Mono',
 				'text-anchor': "start",
