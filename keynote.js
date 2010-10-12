@@ -591,7 +591,7 @@ jQuery(function () {
 				'text-anchor': "start",
 				'fill': '#eae6e0'
 			});
-
+		
 			var set2 = this.paper.set();
 			set2.push(
 				this.paper.circle(0, 0, 30),
@@ -626,7 +626,7 @@ jQuery(function () {
 				'text-anchor': "start",
 				'fill': '#eae6e0'
 			});
-
+		
 			var set2 = this.paper.set();
 			set2.push(
 				this.paper.circle(0, 0, 30),
@@ -673,7 +673,7 @@ jQuery(function () {
 				'text-anchor': "start",
 				'fill': '#eae6e0'
 			});
-
+		
 			var set2 = this.paper.set();
 			set2.push(
 				this.paper.circle(0, 0, 30),
@@ -710,6 +710,163 @@ jQuery(function () {
 				'text-anchor': "start",
 				'fill': '#eae6e0'
 			});
+		},
+		function() {
+			this.paper.text(300, 40, 'The code (animation)').attr({
+				'font-size': 55,
+				'font-family': 'Futura',
+				'fill': '#333'
+			});
+			this.paper.rect(-30, 220, 610, 330, 30).attr({"fill": '#333'});
+			
+      dashed = {fill: "none", stroke: "#666", "stroke-dasharray": "- "};
+			(function(p) {
+				var path1 = "M50.5,120.5c11,0 20,9 20,20c0,11 -9,20 -20,20c-11,0 -20-9 -20-20c0-11 9-20 20-20z",
+						path2 = "M150.5,120.5l20,20 -20,20 -20-20z";
+				p.path(path1).attr(dashed);
+				p.path(path2).attr(dashed);
+				var el = p.path(path1).attr({fill: "none", stroke: "#333", "stroke-width": 2}),
+						elattrs = [{path: path2}, {path: path1}],
+						now = 0;
+				p.arrow(100, 140).node.onclick = function() {
+					el.animate(elattrs[now++], 1000);
+					if (now == 2) {
+						now = 0;
+					}
+				};
+			})(this.paper);
+			this.paper.text(20, 275, "var elem = paper.path({path: path1});\nelem.animate({path: path2});").attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});			
+		},
+		function() {
+			this.paper.text(300, 40, 'The code (animation)').attr({
+				'font-size': 55,
+				'font-family': 'Futura',
+				'fill': '#333'
+			});
+			this.paper.rect(-30, 220, 610, 330, 30).attr({"fill": '#333'});
+			
+      dashed = {fill: "none", stroke: "#666", "stroke-dasharray": "- "};
+			(function(p) {
+				var path1 = "M50.5,120.5c11,0 20,9 20,20c0,11 -9,20 -20,20c-11,0 -20-9 -20-20c0-11 9-20 20-20z",
+						path2 = "M150.5,120.5l20,20 -20,20 -20-20z";
+				p.path(path1).attr(dashed);
+				p.path(path2).attr(dashed);
+				var el = p.path(path1).attr({fill: "none", stroke: "#333", "stroke-width": 2}),
+						elattrs = [{path: path2}, {path: path1}],
+						now = 0;
+				p.arrow(100, 140).node.onclick = function() {
+					el.animate(elattrs[now++], 1000);
+					if (now == 2) {
+						now = 0;
+					}
+				};
+			})(this.paper);
+			this.paper.text(20, 275, "var elem = paper.path({path: path1});\nelem.animate({path: path2});").attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+			
+			(function(p) { 
+				p.text(225, 140, "Yay!").attr({font: '10px Arial', fill: "none", stroke: "#666", "stroke-dasharray": "-"});
+				p.text(325, 140, "Yay!").attr({font: '30px Arial', fill: "none", stroke: "#666", "stroke-dasharray": "-"});
+				var el = p.text(225, 140, "Yay!").attr({font: '10px Arial', fill: "#333"}),
+						elattrs = [{x: 325, "font-size": 30, rotation: 360}, {x: 225, "font-size": 10, rotation: 0}],
+						now = 0;
+				p.arrow(265, 140).node.onclick = function () {
+					el.animate(elattrs[now++], 1000);
+					if (now == 2) {
+						now = 0;
+					}
+				};
+			})(this.paper);
+			this.paper.text(20, 375, "var elem = paper.text(0, 0, 'Yay!')\n\t.attr({font: '10px Arial', fill: '#333'});\nelem.animate({x: 325, 'font-size': 30,\n\t rotation: 360});").attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+		},
+		function() {
+			this.paper.text(300, 40, 'The code (animation)').attr({
+				'font-size': 55,
+				'font-family': 'Futura',
+				'fill': '#333'
+			});
+			this.paper.rect(-30, 220, 610, 330, 30).attr({"fill": '#333'});
+			
+      dashed = {fill: "none", stroke: "#666", "stroke-dasharray": "- "};
+			(function(p) {
+				var path1 = "M50.5,120.5c11,0 20,9 20,20c0,11 -9,20 -20,20c-11,0 -20-9 -20-20c0-11 9-20 20-20z",
+						path2 = "M150.5,120.5l20,20 -20,20 -20-20z";
+				p.path(path1).attr(dashed);
+				p.path(path2).attr(dashed);
+				var el = p.path(path1).attr({fill: "none", stroke: "#333", "stroke-width": 2}),
+						elattrs = [{path: path2}, {path: path1}],
+						now = 0;
+				p.arrow(100, 140).node.onclick = function() {
+					el.animate(elattrs[now++], 1000);
+					if (now == 2) {
+						now = 0;
+					}
+				};
+			})(this.paper);
+			this.paper.text(20, 275, "var elem = paper.path({path: path1});\nelem.animate({path: path2});").attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+			
+			(function(p) { 
+				p.text(225, 140, "Yay!").attr({font: '10px Arial', fill: "none", stroke: "#666", "stroke-dasharray": "-"});
+				p.text(325, 140, "Yay!").attr({font: '30px Arial', fill: "none", stroke: "#666", "stroke-dasharray": "-"});
+				var el = p.text(225, 140, "Yay!").attr({font: '10px Arial', fill: "#333"}),
+						elattrs = [{x: 325, "font-size": 30, rotation: 360}, {x: 225, "font-size": 10, rotation: 0}],
+						now = 0;
+				p.arrow(265, 140).node.onclick = function () {
+					el.animate(elattrs[now++], 1000);
+					if (now == 2) {
+						now = 0;
+					}
+				};
+			})(this.paper);
+			this.paper.text(20, 375, "var elem = paper.text(0, 0, 'Yay!')\n\t.attr({font: '10px Arial', fill: '#333'});\nelem.animate({x: 325, 'font-size': 30,\n\t rotation: 360});").attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
+			
+			
+			(function(p) {
+				p.circle(420, 140, 20).attr(dashed);
+				p.circle(520, 140, 20).attr(dashed);
+				var el = p.circle(420, 140, 20).attr({fill: "#4CBA50", stroke: "#4CBA50", "stroke-width": 2}),
+						elattrs = [{translation: 100, fill: "#4C5DBA", stroke: "#4C5DBA"}, {translation: -100, fill: "#4CBA50", stroke: "#4CBA50"}],
+						now = 0;
+				p.arrow(470, 140).node.onclick = function() {
+					el.animate(elattrs[now++], 1000);
+					if (now == 2) {
+						now = 0;
+					}
+				};
+			})(this.paper);
+			this.paper.text(20, 475, "var elem = paper.circle(0, 0, 20)\n\t.attr({fill:'#4CBA50'});\nelem.animate({fill:'#4C5DBA'});").attr({
+				'font-size': 22,
+				'font-family': 'Andale Mono',
+				'text-anchor': "start",
+				'fill': '#eae6e0'
+			});
 		}
 	]);
 });
+Raphael.fn.arrow = function (x, y) {
+    return this.path(["M", x, y] + "m-10-10l20,0 0-6 10,16 -10,16 0-6 -20,0 0,6 -10-16 10-16z").attr({fill: "#333", stroke: "none", "stroke-dasharray": "-", "fill-opacity": 0.2});
+};
