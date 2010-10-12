@@ -27,6 +27,7 @@ function Keynote(slides) {
 		if (slide && (flag = true)) {
 			self.clear();
 			jQuery.proxy(slide, self).call();
+			self.paper.safari();
 			self.currentSlideId += 1;
 		}
 	};
