@@ -89,7 +89,7 @@ jQuery(function () {
 			
 		},
 		function() {
-			this.paper.text(300, 80, 'How to drawn vector\ngraphics in browsers ?').attr({
+			this.paper.text(300, 80, 'How to draw vector\ngraphics in browsers ?').attr({
 				'font-size': 50,
 				'font-family': 'Futura',
 				'fill': '#333'
@@ -112,7 +112,7 @@ jQuery(function () {
 				'fill': '#333'
 			});
 			this.paper.path(paths['svg']).attr({stroke: 'none', fill: '#333', translation: '280 250', scale: 6})
-			this.paper.text(300, 420, 'But Only for').attr({
+			this.paper.text(300, 420, 'But only for').attr({
 				'font-size': 40,
 				'font-family': 'Futura',
 				'fill': '#333'
@@ -212,7 +212,7 @@ jQuery(function () {
 					'fill': '#333'
 				});
 				this.paper.path("M50 175,85 175,140 290").attr({stroke: '#333', 'stroke-width': 3});			
-				this.paper.text(400, 155, 'Raphël').attr({
+				this.paper.text(400, 155, 'Raphaël').attr({
 					'font-size': 25,
 					'font-family': 'Futura',
 					'fill': '#333'
