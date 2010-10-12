@@ -8,11 +8,17 @@
 	<title>untitled</title>
 	
 	<style>
+		body {
+			font-family: Verdana;
+		}
+		#colophon {
+			background: #C0EDC0;
+			padding: 10px;
+		}
 		#paper {
-			border: solid 1px black;
 			width: 600px;
 			height: 600px;
-			margin: 0 auto;
+			margin: 10px auto;
 		}
 	</style>
 	
@@ -20,7 +26,18 @@
 
 <body>
 	<div id='paper'></div>
-
+	<div id="colophon">
+		<h1>Colophon</h1>
+		<p>This site is a proof of concept, with ideas, icons, structure are stollen from :</p>
+		<ul>
+			<li><a href="http://github.com/schacon/showoff">Showoff</a></li>
+			<li><a href="http://raphaeljs.com/icons/">Raphaël free set of icons</a></li>
+			<li><a href="http://raphaeljs.com/animation.html">Raphaël documentation</a></li>
+			<li><a href="http://www.slideshare.net/Dmitry.Baranovskiy/raphal-js-conf">Dimitry Baranovskiy's talk</a> at JSConf 2010</li>
+		</ul>
+		<p><a href="http://github.com/meuble/Raphael-Keynote">The source code of this page</a> is free for all on Github. But don't scream in front of this not dry, quick'n dirty piece of Javascript</p>
+		<p>Build by <a href="http://imeuble.info">Stéphane Akkaoui</a></p>
+	</div>
 	<script src="jquery.js"></script>
 	<script src="raphael.js"></script>
 	<script src="paths.js"></script>
