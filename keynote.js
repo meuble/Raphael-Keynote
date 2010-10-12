@@ -5,6 +5,7 @@ function Keynote(slides) {
 		self.paper = Raphael('paper', 600, 600);
 		self.currentSlideId = -1;
 		self.registerEvents();
+		self.next();
   };
 
 	self.registerEvents = function() {
@@ -25,9 +26,8 @@ function Keynote(slides) {
 		var flag = false;
 		var slide = slides[self.currentSlideId + 1];
 		
-		self.clear();
-		
 		if (slide && (flag = true)) {
+			self.clear();
 			jQuery.proxy(slide, self).call();
 			self.currentSlideId += 1;
 		}
@@ -37,9 +37,8 @@ function Keynote(slides) {
 		var flag = false;
 		var slide = slides[self.currentSlideId - 1];
 		
-		self.clear();
-		
 		if (slide && (flag = true)) {
+			self.clear();
 			jQuery.proxy(slide, self).call();
 			self.currentSlideId -= 1;
 		}
