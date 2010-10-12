@@ -185,7 +185,7 @@ jQuery(function () {
 				'font-family': 'Futura',
 				'fill': '#333'
 			});
-
+		
 			var vml = this.paper.path(paths['vml']).attr({stroke: 'none', fill: '#333', translation: '385 450', scale: 6})
 			var svg = this.paper.path(paths['svg']).attr({stroke: 'none', fill: '#333', translation: '160 450', scale: 6, rotation: 6})
 			var js = this.paper.path(paths['javascript']).attr({stroke: 'none', fill: '#333', translation: '280 325', scale: 6})
@@ -209,6 +209,33 @@ jQuery(function () {
 			});
 			this.paper.path("M550 375,520 375,470 420").attr({stroke: '#333', 'stroke-width': 3});			
 		},
-		
+		function() {
+			this.paper.text(300, 40, 'Features').attr({
+				'font-size': 55,
+				'font-family': 'Futura',
+				'fill': '#333'
+			});
+			this.paper.circle(240, 390, 180).attr({fill: '#333', 'stroke': 'none', 'opacity': 0.7});
+			this.paper.circle(360, 390, 150).attr({fill: '#333', 'stroke': 'none', 'opacity': 0.7});
+			
+			this.paper.text(550, 200, 'VML').attr({
+				'font-size': 25,
+				'font-family': 'Futura',
+				'fill': '#333'
+			});
+			this.paper.path("M550 217,520 217,470 320").attr({stroke: '#333', 'stroke-width': 3});
+				this.paper.text(50, 155, 'SVG').attr({
+					'font-size': 25,
+					'font-family': 'Futura',
+					'fill': '#333'
+				});
+				this.paper.path("M50 175,85 175,140 290").attr({stroke: '#333', 'stroke-width': 3});			
+				this.paper.text(400, 155, 'Raphël').attr({
+					'font-size': 25,
+					'font-family': 'Futura',
+					'fill': '#333'
+				});
+				this.paper.path("M380 172,360 172,340 290").attr({stroke: '#333', 'stroke-width': 3});
+		},
 	]);
 });
