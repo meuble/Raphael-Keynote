@@ -704,7 +704,7 @@ jQuery(function () {
 				this.paper.text(0, 0, '1')
 			);
 			set4.attr({translation: "450 130", 'stroke-width': 3, 'stroke': '#4CBA50', 'fill': '#FFF', 'font-size': 55, 'font-family': 'Courier', scale: 2, cursor: 'wait'})
-			this.paper.text(20, 450, "set.attr({'cursor': 'wait});").attr({
+			this.paper.text(20, 450, "set.attr({'cursor': 'wait'});").attr({
 				'font-size': 22,
 				'font-family': 'Andale Mono',
 				'text-anchor': "start",
