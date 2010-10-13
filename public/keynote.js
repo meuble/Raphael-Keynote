@@ -9,6 +9,14 @@ function Keynote(slides) {
   };
 
 	self.registerEvents = function() {
+		$(document).click(function(eventObject) {
+			if (eventObject.clientX < $('#paper').offset().left) {
+				self.previous();
+			}
+			if (eventObject.clientX > $('#paper').width() + $('#paper').offset().left) {
+				self.next();
+			}
+		});
 		$(document).keydown(function(eventObject) {
 			if (eventObject.keyCode == 39) {
 				self.next();
